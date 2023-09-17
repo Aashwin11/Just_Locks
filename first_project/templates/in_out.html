@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In_Out</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .form{
+            text-align: center;
+            background-color:#e5cfd5;
+            border-radius: 10px;
+            padding: 35px;
+            width: 500px;
+            border: 1px solid black;
+        }
+        body{
+            background-image: url('https://images.unsplash.com/photo-1606040879707-0629f60767aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=789&q=80');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+            width:100%;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .header{
+            color:black;
+            margin:03px;
+        }
+        .date-info{
+            text-transform:capitalize;
+            font-size: 20px;
+        }
+        #Date{
+            padding:5px;
+            border:1px solid black;
+            border-radius: 10px;
+            width:50%;
+            color: black;
+        }
+        #in-Time{
+            padding:5px;
+            border:1px solid black;
+            border-radius: 10px;
+            width:50%;
+            color: black;
+        }
+        #out-Time{
+            padding:5px;
+            border:1px solid black;
+            border-radius: 10px;
+            width:50%;
+            color: black;
+        }
+        .btn
+        {
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom:0px;
+            font-weight: 500;
+            padding: 12px 35px;
+            color: #f2f2f2;
+            border-radius: 40px;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border: none;
+            background: black;
+            transition: all 1s ease-in-out;
+        }
+        
+        .btn:hover{
+            font-weight: 600;
+            background: white;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form action="#" class="form">
+                <center><h1><u>In and Out</u></h1></center><br>
+                <div class="header">
+                    <label for="Date" class="form-details">DATE&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="date" name="date" id="Date" required>
+                </div>
+                <br>
+                <div class="header">
+                    <label for="in-time" class="form-details">IN-TIME&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="time" name="timer" id="in-Time" required>
+                </div>
+                <br>
+                <div class="header">
+                    <label for="out-time" class="form-details">OUT-TIME&nbsp;:</label>
+                        <input type="time" name="timer" id="out-Time" required>
+                </div>
+                <br>
+                <div class="button">
+                    <button type="submit" class="btn" formaction="http://127.0.0.1:8000/selectee">LOCK IN</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

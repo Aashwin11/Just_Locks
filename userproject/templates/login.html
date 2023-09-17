@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    body{
+      margin: 10%;
+      background-image: url('https://images.unsplash.com/photo-1606040879707-0629f60767aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=789&q=80');
+      background-size: cover;
+      
+    }
+    section{
+      background-color: #e5cfd5;
+    }
+    label{
+      font-size: x-large;
+    }
+    input{
+      font-size: x-large;
+    }
+    a:link{color:#05527d}
+    a:visited{color: #05527d}
+    a:hover{color:red}
+    a:active{color:red}
+
+    .btn{
+      font-size: x-large;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <center>
+    <form action="/login" method="POST">
+    {% csrf_token %}
+    <h1><b><u>LOGIN</u></b></h1>
+    <img src = "https://cdn-icons-png.flaticon.com/128/456/456212.png" height = "200" width = "200"><br><br>
+    <label for = "User ID" style = "text-align: left;">User ID: &nbsp;</label><br>
+    <input type = "text" name="username"><br>
+    <label for = "Password" style="text-align: left;">Password: &nbsp;</label><br>
+    <input type = "password" name="password"><br><br>
+    <a href="index.html"><button type="submit" name = "LogIn" class="btn" style="background-color: #05527d; color:white;">LOGIN</button><br></a>
+    <p>If not registered already, <a href="sign_up.html">Sign UP!</a></p>
+    </form
+  </center>
+</section>
+</body>
+</html>

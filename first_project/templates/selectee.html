@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectee</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url('https://images.unsplash.com/photo-1606040879707-0629f60767aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=789&q=80');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            color: white;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .name{
+            font-size: 1.3rem;
+            color:black;
+        }
+        .Name{
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: black;
+        }
+        .border{
+            padding: 70px;
+            width: 100%;
+        }
+        .button{
+            text-align: center;
+        }
+        .btn
+        {
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 30px;
+            margin-bottom:0px;
+            font-weight: 500;
+            padding: 12px 35px;
+            color: #f2f2f2;
+            border-radius: 40px;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border: none;
+            background: rgb(46, 45, 45);
+            transition: all 1s ease-in-out;
+        }
+        
+        .btn:hover{
+            font-weight: 600;
+            background: white;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="background-color: #e5cfd5">
+        <form>
+            <fieldset class="border">
+                <legend class="Name"><u>Choose Selectee Name </u></legend>
+                <div class="name">
+                    <input type="radio" name="name" id="name">
+                    Sameer 
+                </div>
+                <br>
+                <div class="sec name">
+                    <input type="radio" name="sec" id="sec-name">
+                    Aniket
+                </div>
+                <br>
+                <div class="add name">
+                    Add-name:
+                    <input type="text" name="add" id="add-name">
+                </div>
+                <div class="button-name">
+                    <button type="submit" class="btn" formaction="http://127.0.0.1:8000/payment">Select</button>
+                </div>
+            </fieldset>
+        </form>
+
+        </div>
+    </div>
+</body>
+</html>

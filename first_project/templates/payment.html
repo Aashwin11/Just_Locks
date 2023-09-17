@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url('https://images.unsplash.com/photo-1606040879707-0629f60767aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=789&q=80');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            margin-top: 10%;
+            height: 100vh;
+            width:100%;
+            justify-content: center;
+            align-items: center;
+            padding-left: 500px;
+            
+        }
+        .btn
+        {
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom:0px;
+            font-weight: 500;
+            padding: 12px 35px;
+            color: #f2f2f2;
+            border-radius: 40px;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border: none;
+            background: black;
+            transition: all 1s ease-in-out;
+        }
+        
+        .btn:hover{
+            font-weight: 600;
+            background: white;
+            color: black;
+        }
+        
+
+        
+        .cardhead{
+            font-size: 25px;
+            
+
+        }
+        .border
+        {
+            padding: 50px;
+            width: 80%;
+        }
+        .form{
+            padding-top: 10px;
+            text-align: center;
+            background-color:transparent;
+            border-radius: 10px;
+            padding: 35px;
+            width: 500px;
+            background-color: #e5cfd5;
+        }
+        .upi{
+            font-size: 30px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="form"><center>
+            <fieldset class="border">
+                <legend class="cardhead">PAYMENT METHOD</legend>
+                <br>
+                <div class="upi">
+                       <input type="radio">&nbsp;UPI</input>
+                </div>
+                <div>
+                <button type="submit" class="btn" formaction="http://127.0.0.1:8000/qr_pay">Proceed to checkout</button>
+            </div>
+        </fieldset></center>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

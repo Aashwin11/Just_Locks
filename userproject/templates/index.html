@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locker_location</title>
+  <style>
+
+    body{
+      margin: 10%;
+      background-image: url('https://images.unsplash.com/photo-1606040879707-0629f60767aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=789&q=80');
+      background-size: cover;
+    }
+    
+    section{
+      background-color: #e5cfd5;
+    }
+
+    .left{
+      font-size: large;
+    }
+  </style>
+</head>
+<body>
+<section>
+<center>
+  <h1><b><u>Locate Locker Station</u></b></h1>
+  <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0681894354866!2d77.71141237531195!3d12.967488414967896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae130f321b2b95%3A0x74b2c05bbc2aac8d!2sCMR%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1689086971145!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+</center>
+<label for="station_no" class = "left" style="margin-left: 20%;">Enter Station Number:</label> 
+    <select name="stn_no" class = "left" style="margin-left: 3%;"> 
+        <option value="001">001 CMR Institue of Technology, AECS Layout</option> 
+        <option value="002">002 Brookfield Mall, AECS layout</option> 
+        <option value="003">003 Asha Tiffins, AECS layout</option> 
+        <option value="004">004 Kundalahalli colony bus stop, Kundalhalli colony</option> 
+    </select><br><br>
+<label for="locker_no" class = "left" style="margin-left: 20%;">Enter Locker Number:</label>
+    <select name="lock_no" class = "left" style = "margin-left: 3%;">
+      <option value="A">Locker A</option> 
+      <option value="B">Locker B</option>
+      <option value="C">Locker C</option>
+      <option value="D">Locker D</option>
+      <option value="E">Locker E</option>
+      <option value="F">Locker F</option>
+      <option value="G">Locker G</option>
+      <option value="H">Locker H</option>
+      <option value="I">Locker I</option>
+      <option value="J">Locker J</option>         
+    </select>
+    <p class = "left" style="margin-left: 20%;"><sub>(Check for the is empty)</sub></p>
+<a href="http://127.0.0.1:8000/lock_keep"><button type="submit" name = "LockIn" class="btn" height="50" width = "50" style="background-color: #05527d; color:white; margin-left: 50%; font-size: larger;">LockIn</button><br></a><br>
+</section>
+</body>
+</html>
